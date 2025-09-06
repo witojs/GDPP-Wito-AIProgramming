@@ -47,10 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Pickable/Pickable.cs" />
+    <Compile Include="Assets/Enemy/PatrolState.cs" />
     <Compile Include="Assets/Player/Player.cs" />
+    <Compile Include="Assets/Enemy/BaseState.cs" />
+    <Compile Include="Assets/Enemy/RetreatState.cs" />
+    <Compile Include="Assets/Enemy/Enemy.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Pickable/PickableType.cs" />
     <Compile Include="Assets/Pickable/PickableManager.cs" />
+    <Compile Include="Assets/Enemy/ChaseState.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.44f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

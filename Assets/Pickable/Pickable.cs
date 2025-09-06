@@ -5,7 +5,7 @@ public class Pickable : MonoBehaviour
 {
     public Action<Pickable> OnPicked;
     
-    [SerializeField] public PickableType _pickableType;
+    [SerializeField] public PickableType PickableType;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

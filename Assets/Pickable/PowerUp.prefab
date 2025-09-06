@@ -505,4 +505,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b14d01f422a74a05ace37cedc4395ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickableType: 1
+  PickableType: 1

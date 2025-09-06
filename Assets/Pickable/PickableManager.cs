@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PickableManager : MonoBehaviour
 {
+    [SerializeField] private Player _player;
+    
     private List<Pickable> _pickableList = new List<Pickable>();
  
     private void Start()
@@ -26,6 +28,11 @@ public class PickableManager : MonoBehaviour
         _pickableList.Remove(pickable);
         Destroy(pickable.gameObject);
         Debug.Log("Pickable List: " + _pickableList.Count);
+        if (pickable.PickableType == PickableType.PowerUp)
+        {
+            Debug.Log("Abrakadabra");
+            _player?.PickPowerUp();
+        }
         if (_pickableList.Count <= 0)
         {
             Debug.Log("Win");
