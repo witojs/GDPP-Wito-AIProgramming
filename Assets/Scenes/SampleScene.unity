@@ -5966,7 +5966,7 @@ PrefabInstance:
       objectReference: {fileID: 453707078}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6328,7 +6328,7 @@ PrefabInstance:
       objectReference: {fileID: 493052656}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7828,7 +7828,7 @@ PrefabInstance:
       objectReference: {fileID: 551318966}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8020,7 +8020,7 @@ PrefabInstance:
       objectReference: {fileID: 826184762}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8103,7 +8103,7 @@ PrefabInstance:
       objectReference: {fileID: 132948964}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11261,7 +11261,7 @@ PrefabInstance:
       objectReference: {fileID: 1488562722}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13241,7 +13241,7 @@ PrefabInstance:
       objectReference: {fileID: 2040165952}
     - target: {fileID: 5858287535255966272, guid: 254e2221f467f4b1e8e99ab54fd73196, type: 3}
       propertyPath: m_VersionIndex
-      value: 5746
+      value: 5749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13607,6 +13607,7 @@ GameObject:
   - component: {fileID: 1911691856}
   - component: {fileID: 1911691854}
   - component: {fileID: 1911691859}
+  - component: {fileID: 1911691860}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -13727,6 +13728,28 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1911691860
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911691853}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 697a569fe6c7b4f9ca0817325e3946ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1928862335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3434567957820232059, guid: b01522ef2119a4f359c1c8e0c103b195, type: 3}
