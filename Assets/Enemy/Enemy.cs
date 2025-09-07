@@ -42,7 +42,18 @@ public class Enemy : MonoBehaviour
             _currentState.UpdateState(this);
         }
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(_currentState != RetreatState)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.GetComponent<Player>().Dead();
+            }
+        }
+    }
+
     public void SwitchState(BaseState state)
     {
         _currentState.ExitState(this);
@@ -58,5 +69,10 @@ public class Enemy : MonoBehaviour
     private void StopRetreating()
     {
         SwitchState(PatrolState);
+    }
+    
+    public void Dead()
+    {
+        Destroy(gameObject);
     }
 }
