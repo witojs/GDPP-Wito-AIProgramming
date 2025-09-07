@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickableManager : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class PickableManager : MonoBehaviour
         _pickableList.Remove(pickable);
         Destroy(pickable.gameObject);
         Debug.Log("Pickable List: " + _pickableList.Count);
+        if (_scoreManager != null)
+        {
+            _scoreManager.AddScore(1);
+        }
         if (pickable.PickableType == PickableType.PowerUp)
         {
             Debug.Log("Abrakadabra");
@@ -37,12 +42,7 @@ public class PickableManager : MonoBehaviour
         }
         if (_pickableList.Count <= 0)
         {
-            Debug.Log("Win");
-        }
-
-        if (_scoreManager != null)
-        {
-            _scoreManager.AddScore(1);
+            SceneManager.LoadScene("WinScreen");
         }
     }
 }

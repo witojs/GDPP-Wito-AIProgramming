@@ -12257,7 +12257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9237315616126426dbb1fcfb3a6db098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 200
+  _speed: 250
   _camera: {fileID: 1031146680}
   _powerupDuration: 5
   _respawnPoint: {fileID: 1897488721}

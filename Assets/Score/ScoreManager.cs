@@ -8,10 +8,14 @@ public class ScoreManager : MonoBehaviour
     private int _score;
     private int _maxScore;
 
-    private void Start()
+    private void Awake()
     {
         _score = 0;
         _maxScore = 0;
+    }
+
+    private void Start()
+    {
         UpdateUI();
     }
 
