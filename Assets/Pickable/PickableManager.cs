@@ -42,7 +42,7 @@ public class PickableManager : MonoBehaviour
         }
         if (_pickableList.Count <= 0)
         {
-            SceneManager.LoadScene("WinScreen");
+            SceneManager.LoadScene("WinScene");
         }
     }
 }

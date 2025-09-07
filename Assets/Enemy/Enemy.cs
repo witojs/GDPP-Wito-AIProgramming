@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public ChaseState ChaseState = new ChaseState();
     public RetreatState RetreatState = new RetreatState();
 
+    private bool _isDead = false;
 
     private void Start()
     {
@@ -37,6 +38,8 @@ public class Enemy : MonoBehaviour
  
     private void Update()
     {
+        if (_isDead) return;
+
         if(_currentState != null)
         {
             _currentState.UpdateState(this);
@@ -51,6 +54,15 @@ public class Enemy : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Player>().Dead();
             }
+        }
+    }
+    
+    private void OnDestroy()
+    {
+        if (Player != null)
+        {
+            Player.OnPowerUpStart -= StartRetreating;
+            Player.OnPowerUpStop -= StopRetreating;
         }
     }
 
@@ -73,6 +85,8 @@ public class Enemy : MonoBehaviour
     
     public void Dead()
     {
+        NavMeshAgent.enabled = false;
+        Animator.enabled = false; 
         Destroy(gameObject);
     }
 }
